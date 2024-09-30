@@ -16,7 +16,7 @@ Getting Started
 - Java 17 or later
 - Maven (for building and managing dependencies)
 - Docker (optional, for running in a container)
-### Installation
+## Installation
 - Clone the Repository:
 - git clone https://github.com/yourusername/your-repo-name.git
 - cd your-repo-name
@@ -24,33 +24,31 @@ Getting Started
 - mvn package
 ### Run the Application: You can run the application from the command line:
 - java -jar target/App.jar
-Using the Application
-Once the application is running, you will see a menu with the following options:
+
+### Once the application is running, you will see a menu with the following options:
+- Add new activity
+- Show all activities
+- Total time spent on activities
+- Exit
 
 To add a new activity, select option 1 and follow the prompts to enter the sport name, duration (in hours), and the day of the week.
+
 To view all activities, select option 2. The application will display all logged activities.
+
 To see the total time spent on all activities, select option 3.
+
 To exit the application, select option 4.
-Running with Docker
+
+## Running with Docker
 You can also run the application using Docker. Ensure you have Docker installed, then run the following commands:
 
-Build the Docker Image:
-docker build -t yahhas/otp1w7 .
-Run the Docker Container:
-docker run yahhas/otp1w7
-Testing
+### Build the Docker Image:
+- docker build -t yahhas/otp1w7
+
+## Run the Docker Container:
+- docker run yahhas/otp1w7
+
+## Testing
 The application includes unit tests for the SportApp class, ensuring that methods for getting and setting attributes work correctly. You can run the tests using Maven:
 
-bash
-mvn test
-Dependencies
-This project uses the following key dependencies:
-
-JUnit for unit testing.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgements
-
-Java and Maven for providing the framework and tools.
-Docker for containerization.
+- mvn test
